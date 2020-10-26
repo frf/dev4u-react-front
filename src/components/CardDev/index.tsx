@@ -1,21 +1,28 @@
 import React from 'react';
 import './styles.css';
 import { Link } from 'react-router-dom';
+import Badge from '../Badge';
 import {
   FaStar,
 } from 'react-icons/fa';
-interface CardDdevProps {
+interface CardDevProps {
+    name: string;
+    uuid?: string;
+    title?: string;
 }
-const CardDev: React.FC<CardDdevProps> = (props)  => {
+const CardDev: React.FC<CardDevProps> = (props)  => {
   return (
     <>
-     
-        <Link to={"https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852"} className="card">
-        <div className="thumb " id="img1"></div>
-        <article>
-            <h1>International Artist Feature: Malaysia</h1>
-            <span>Mary Winkler</span>
-        </article>
+        <Link to={"https://dev4u.app"} className="card">
+            <div className="thumb" id="img1"></div>
+            <article>
+                <h1>{props.title}</h1>
+                <span>{props.name}</span>
+                <div className="badge">
+                    <Badge title="PHP" />
+                    <Badge title="Vue" />
+                </div>
+            </article>
         </Link>
     
     </>

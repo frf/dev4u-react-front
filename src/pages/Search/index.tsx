@@ -24,17 +24,12 @@ function Search() {
                 </li>
             </ul>
 
-
             <div className="flex-container wrap">
                  <div className="row">
-                    <div className="column"><CardDev /></div>
-                    <div className="column"><CardDev /></div>
-                    <div className="column"><CardDev /></div>
-                    <div className="column"><CardDev /></div>
-                    <div className="column"><CardDev /></div>
-                    <div className="column"><CardDev /></div>
+                    <div className="column"><CardDev name="Fabio" title="Software Developer" /></div>
+                    <div className="column"><CardDev name="Maria" title="UX Developer" /></div>
+                    <div className="column"><CardDev name="Catherine" title="OPS Developer" /></div>
                 </div>
-                
             </div>
 
     </>
